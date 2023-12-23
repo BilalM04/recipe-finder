@@ -1,0 +1,31 @@
+/* SearchBar.css */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .search-input {
+    padding: 8px;
+    width: 300px; /* Adjust width if needed */
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  /* Adding hover effect */
+  .search-button:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+  }
+  
