@@ -1,0 +1,66 @@
+/* HomePage.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .content {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .ctaButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .ctaButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Footer styles */
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: white;
+    padding: 20px;
+  }
+  
+  .social-links img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-links img:hover {
+    transform: scale(1.1);
+  }
+  
+  
