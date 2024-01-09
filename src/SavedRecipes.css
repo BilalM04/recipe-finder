@@ -1,0 +1,33 @@
+/* SavedRecipes.css */
+
+/* Styles for saved recipes */
+.saved-recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .saved-recipe-card {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    background-color: #ccccccb7;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    width: 250px;
+  }
+  
+  .saved-recipe-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .saved-recipe-card h3 {
+    margin-top: 0;
+  }
+  

@@ -41,6 +41,8 @@ h1 {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   width: calc(33.33% - 20px);
+  margin-top: 15px;
+  width: 250px;
 }
 
 .recipe-card:hover {
@@ -56,4 +58,51 @@ h1 {
   height: auto;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  padding-top: 20px; /* Add some top padding */
+}
+
+.auth-buttons {
+  align-self: flex-end; /* Align buttons to the right */
+  margin-bottom: 20px; /* Add space between buttons and content */
+}
+
+.auth-buttons button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.auth-buttons button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+}
+
+.header {
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2rem; /* Adjust font size if necessary */
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666;
 }
