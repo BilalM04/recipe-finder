@@ -4,6 +4,12 @@ Welcome to the Recipe Finder web application, a dynamic and intuitive solution f
 
 **Check it out:** [Recipe Finder](https://recipe-finder3.netlify.app/)
 
+![image](https://github.com/BilalM04/RecipeFinder/assets/77511892/5cd23eb9-deba-4508-a911-56c8bffddc58)
+![image](https://github.com/BilalM04/RecipeFinder/assets/77511892/170532d6-e296-4f41-8c16-997e5ba1fc5f)
+
+
+
+
 ## Features
 
 - **Recipe Discovery:** Explore a diverse range of recipes based on user-inputted ingredients, thanks to the integration of the Edamam API.
