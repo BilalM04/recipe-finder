@@ -18,6 +18,25 @@ Welcome to the Recipe Finder web application, a dynamic and intuitive solution f
 
 - **Database Integration:** Utilize MongoDB to securely store and retrieve recipes saved by authorized users.
 
+## User Authentication and Recipe Management
+
+The Recipe Finder web application provides a robust set of features for user authentication and recipe management, enhancing your overall experience.
+
+### User Authentication
+
+- **Login:** Users can securely log in to their accounts, ensuring a personalized experience tailored to their preferences.
+
+- **Sign Up:** New users can easily create accounts, gaining access to personalized features and recipe-saving capabilities.
+
+### Recipe Management
+
+- **Save Recipes:** Authenticated users have the ability to save their favorite recipes for easy access later. This feature enables a curated collection of personalized recipes.
+
+- **Delete Recipes:** Users can manage their saved recipes by deleting items from their collection. This flexibility ensures a tailored and clutter-free recipe library.
+
+These features, combined with the intuitive interface and recipe discovery capabilities, make the Recipe Finder a comprehensive solution for both discovering and managing your favorite recipes.
+
+
 ## Technologies Used
 
 - **Frontend:** React.js, CSS
