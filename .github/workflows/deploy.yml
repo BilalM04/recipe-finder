@@ -36,7 +36,8 @@ jobs:
           REACT_APP_EDAMAM_APP_KEY: ${{ secrets.REACT_APP_EDAMAM_APP_KEY }}
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4.0.0
+        uses: JamesIves/github-pages-deploy-action@v4.6.3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
