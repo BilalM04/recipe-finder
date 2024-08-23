@@ -71,7 +71,7 @@ const App = () => {
 
   let navigate = useNavigate(); 
   const routeChange = () =>{ 
-    let path = `/Saved`; 
+    let path = `${process.env.REACT_APP_FOR_PATH}/saved`; 
     navigate(`${path}?user=${user ? user.email : ''}`);
   }
 

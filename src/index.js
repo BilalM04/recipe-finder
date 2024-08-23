@@ -9,14 +9,14 @@ import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: process.env.REACT_APP_FOR_PATH + "/",
     element: <HomePage/>,
   },
   {
-    path: "browse",
+    path: process.env.REACT_APP_FOR_PATH + "/browse",
     element: <App/>,
   },{
-    path: "saved",
+    path: process.env.REACT_APP_FOR_PATH + "/saved",
     element: <SavedRecipes/>,
   },
 ]);
