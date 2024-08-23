@@ -2,7 +2,7 @@
 
 Welcome to the Recipe Finder web application, a dynamic and intuitive solution for discovering and managing your favorite recipes. This project is developed using JavaScript, React.js, Node.js, Express.js, CSS, Firebase, and MongoDB.
 
-**Check it out:** [Recipe Finder](https://recipe-finder3.netlify.app/)
+**Check it out:** [Recipe Finder](https://bilalm04.github.io/recipe-finder/)
 
 ![image](https://github.com/BilalM04/RecipeFinder/assets/77511892/5cd23eb9-deba-4508-a911-56c8bffddc58)
 ![image](https://github.com/BilalM04/RecipeFinder/assets/77511892/170532d6-e296-4f41-8c16-997e5ba1fc5f)
@@ -71,4 +71,4 @@ These features, combined with the intuitive interface and recipe discovery capab
 
 ## Demo
 
-Explore the live demo: [Recipe Finder](https://recipe-finder3.netlify.app/)
+Explore the live demo: [Recipe Finder](https://bilalm04.github.io/recipe-finder/)
