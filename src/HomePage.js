@@ -10,7 +10,7 @@ import initials from './assets/images/initials.png';
 const HomePage = () => {
   let navigate = useNavigate(); 
   const routeChange = () =>{ 
-    let path = `/App`; 
+    let path = `/browse`; 
     navigate(path);
   }
 
