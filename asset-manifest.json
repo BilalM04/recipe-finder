@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/recipe-finder/static/css/main.ebd22929.css",
-    "main.js": "/recipe-finder/static/js/main.5184f718.js",
-    "static/js/453.d2142cf0.chunk.js": "/recipe-finder/static/js/453.d2142cf0.chunk.js",
-    "static/media/LinkedInLogo.png": "/recipe-finder/static/media/LinkedInLogo.aefe7d78a16ce2c7d49e.png",
-    "index.html": "/recipe-finder/index.html",
-    "main.ebd22929.css.map": "/recipe-finder/static/css/main.ebd22929.css.map",
-    "main.5184f718.js.map": "/recipe-finder/static/js/main.5184f718.js.map",
-    "453.d2142cf0.chunk.js.map": "/recipe-finder/static/js/453.d2142cf0.chunk.js.map"
+    "main.css": "./static/css/main.ebd22929.css",
+    "main.js": "./static/js/main.bcf2f0ba.js",
+    "static/js/453.d2142cf0.chunk.js": "./static/js/453.d2142cf0.chunk.js",
+    "static/media/LinkedInLogo.png": "./static/media/LinkedInLogo.aefe7d78a16ce2c7d49e.png",
+    "index.html": "./index.html",
+    "main.ebd22929.css.map": "./static/css/main.ebd22929.css.map",
+    "main.bcf2f0ba.js.map": "./static/js/main.bcf2f0ba.js.map",
+    "453.d2142cf0.chunk.js.map": "./static/js/453.d2142cf0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ebd22929.css",
-    "static/js/main.5184f718.js"
+    "static/js/main.bcf2f0ba.js"
   ]
 }
