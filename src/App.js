@@ -13,8 +13,7 @@ import SignUpForm from './SignUpForm';
 const App = () => {
   const [query, setQuery] = useState('');
   const [recipes, setRecipes] = useState([]);
-  const [user, setUser] = useState(null); // Firebase user
-  const [isLoading, setIsLoading] = useState(true);
+  const [user, setUser] = useState(null);
   const [showLoginForm, setShowLoginForm] = useState(false);
   const [showSignUpForm, setShowSignUpForm] = useState(false);
 
@@ -22,7 +21,7 @@ const App = () => {
     if (query.trim() !== '') {
       try {
         const response = await axios.get(
-          `https://api.edamam.com/search?q=${query}&app_id=1023ff2b&app_key=2a4f3db4e6fde34b62d4e51078b80516&to=50`
+          `https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_EDAMAM_APP_ID}&app_key=${process.env.REACT_APP_EDAMAM_APP_KEY}&to=50`
         );
         setRecipes(response.data.hits);
       } catch (error) {
@@ -44,7 +43,7 @@ const App = () => {
         ingredients: recipeIngredients,
       };
 
-      const response = await axios.post(`https://recipe-finder-restapi.vercel.app/users/${user.email}`, recipeToSave);
+      const response = await axios.post(`${process.env.REACT_APP_RECIPE_API_URL}/users/${user.email}`, recipeToSave);
       console.log(`Recipe "${recipeLabel}" saved!`, response.data);
     } catch (error) {
       console.error('Error saving recipe:', error);

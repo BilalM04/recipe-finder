@@ -10,8 +10,8 @@ const SignUpForm = ({ setShowSignUpForm }) => {
 
 const handleSignUp = async () => {
     createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    const user = userCredential.user;
+  .then(() => {
+    console.log('Signed up user:', email)
   })
   .catch((error) => {
     console.error('Sign up error:', error.message);

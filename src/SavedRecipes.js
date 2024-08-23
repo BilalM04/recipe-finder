@@ -13,7 +13,7 @@ const SavedRecipes = () => {
     const fetchSavedRecipes = async () => {
       try {
         if (userEmail) {
-          const response = await axios.get(`https://recipe-finder-restapi.vercel.app/users/${userEmail}`);
+          const response = await axios.get(`${process.env.REACT_APP_RECIPE_API_URL}/users/${userEmail}`);
           setSavedRecipes(response.data);
         }
       } catch (error) {
@@ -26,7 +26,7 @@ const SavedRecipes = () => {
 
   const handleDeleteRecipe = async (recipeID) => {
     try {
-      const response = await axios.delete(`https://recipe-finder-restapi.vercel.app/users/${userEmail}/recipes/${recipeID}`);
+      const response = await axios.delete(`${process.env.REACT_APP_RECIPE_API_URL}/users/${userEmail}/recipes/${recipeID}`);
       console.log(`Recipe deleted!`, response.data);
       window.location.reload();
     } catch (error) {
