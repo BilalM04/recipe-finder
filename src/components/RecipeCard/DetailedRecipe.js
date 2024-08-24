@@ -64,9 +64,9 @@ const DetailedRecipe = ({ isOpen, onClose, onSave, recipe, user }) => {
           </div>
         </div>
         <div className="row button-row footer">
-          {user && <button onClick={() => onSave(link)}>Save Recipe</button>}
-          <button>Share</button>
-          <button onClick={onClose}>Close</button>
+          {user && <button className='recipe-button' onClick={() => onSave(link)}>Save Recipe</button>}
+          <button className='recipe-button'>Share</button>
+          <button className='recipe-button' onClick={onClose}>Close</button>
         </div>
       </div>
     </div>

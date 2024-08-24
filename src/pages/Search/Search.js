@@ -79,16 +79,16 @@ const Search = () => {
       <div className="auth-buttons">
         {user ? (
           <div>
-            <button onClick={handleLogout}>Logout</button>
+            <button className='auth-button' onClick={handleLogout}>Logout</button>
           </div>
         ) : (
           <div>
-            <button onClick={() => setShowLoginForm(true)}>Login</button>
+            <button className='auth-button' onClick={() => setShowLoginForm(true)}>Login</button>
             {showLoginForm && (
               <LoginForm setShowLoginForm={setShowLoginForm} />
             )}
 
-            <button onClick={() => setShowSignUpForm(true)}>Sign Up</button>
+            <button className='auth-button' onClick={() => setShowSignUpForm(true)}>Sign Up</button>
             {showSignUpForm && (
               <SignUpForm setShowSignUpForm={setShowSignUpForm} />
             )}

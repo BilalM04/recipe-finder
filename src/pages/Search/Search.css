@@ -67,7 +67,7 @@ h1 {
   margin-bottom: 20px; /* Add space between buttons and content */
 }
 
-.auth-buttons button {
+.auth-button {
   padding: 8px 16px;
   background-color: #007bff;
   color: white;
@@ -78,7 +78,7 @@ h1 {
   margin-left: 10px;
 }
 
-.auth-buttons button:hover {
+.auth-button:hover {
   background-color: #0056b3;
   transform: scale(1.05);
 }

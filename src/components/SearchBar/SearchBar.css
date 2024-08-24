@@ -15,7 +15,7 @@
   
   .search-button {
     padding: 8px 15px;
-    background-color: #007bff;
+    background-color: #FFA500;
     color: #FFFFFF;
     border: none;
     cursor: pointer;
@@ -26,6 +26,17 @@
   /* Adding hover effect */
   .search-button:hover {
     transform: scale(1.05);
-    background-color: #0056b3;
+    background-color: #FF8C00;
+  }
+
+  button {
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #808080;
   }
   

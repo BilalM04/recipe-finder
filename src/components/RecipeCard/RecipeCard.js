@@ -31,15 +31,19 @@ const RecipeCard = ({ recipe, onSaveRecipe, user, onDelete }) => {
         </div>
       </div>
       <div className="row button-row">
-        <button onClick={() => setIsModalOpen(true)}>
+        <button className="recipe-button" onClick={() => setIsModalOpen(true)}>
           View Details
         </button>
-        {user && <button onClick={() => onSaveRecipe(link)}>
+        {user && (
+          <button className="recipe-button" onClick={() => onSaveRecipe(link)}>
             Save Recipe
-        </button>}
-        {onDelete && <button onClick={() => onDelete(link)}>
+          </button>
+        )}
+        {onDelete && (
+          <button className="recipe-button" onClick={() => onDelete(link)}>
             Delete
-        </button>}
+          </button>
+        )}
       </div>
       <DetailedRecipe
         isOpen={isModalOpen}
