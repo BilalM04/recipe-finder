@@ -1,0 +1,80 @@
+/* DetailedRecipe.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #f0f0f0;
+  padding: 0; /* Remove all padding */
+  border-radius: 5px;
+  text-align: center;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Media query for screens smaller than 600px width or height */
+@media (max-width: 600px), (max-height: 600px) {
+  .modal-content {
+    width: 100vw; /* Take up the full viewport width */
+    height: 100vh; /* Take up the full viewport height */
+    border-radius: 0; /* Remove border-radius if desired */
+    padding: 20px; /* Add some padding to ensure content isn't too close to edges */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+  }
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px; /* Add padding around the content */
+  margin-bottom: 0; /* Ensure no margin at the bottom */
+}
+
+.footer {
+  background: #f0f0f0;
+  padding: 20px 0; /* Minimal padding */
+  border-top: 1px solid #ccc;
+  display: flex;
+  margin-top: 0; /* Remove any margin above the footer */
+  flex-shrink: 0;
+}
+
+h3 {
+  margin-top: 10px; /* Adjust the space above the heading */
+  margin-bottom: 0; /* Adjust the space below the heading */
+}
+
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.no-bullets li {
+  margin-bottom: 10px;
+}
+
+.list ul {
+  list-style-position: inside; /* Ensures bullets are inside the content box */
+  padding-left: 0; /* Removes any default padding */
+  margin-left: 0; /* Ensures no margin on the left side */
+  text-align: left; /* Aligns the text to the left */
+  max-width: 350px;
+}
+
+.list ul li {
+  text-indent: -20px; /* Negative indent to pull the first line back */
+  padding-left: 20px; /* Indent the rest of the lines */
+}

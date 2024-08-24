@@ -2,8 +2,8 @@
 import React from 'react';
 import './HomePage.css';
 import { useNavigate } from "react-router-dom";
-import LinkedInLogo from './assets/images/LinkedInLogo.png';
-import initials from './assets/images/initials.png';
+import LinkedInLogo from '../../assets/images/LinkedInLogo.png';
+import initials from '../../assets/images/initials.png';
 
 
 
@@ -16,12 +16,12 @@ const HomePage = () => {
 
   return (
     <div className="container">
-      <div className="content">
+      <div className="content-main">
         <h1 className="title">👨‍🍳 Recipe Finder 🍴</h1>
-        <p className="description">Easily discover delightful recipes by simply entering your available ingredients.</p>
+        <p className="description">Easily discover recipes by simply entering your available ingredients.</p>
         <button className="ctaButton" onClick={routeChange}>Try it Out</button>
       </div>
-      <footer className="footer">
+      <footer className="footer-main">
         <div className="social-links">
           <a href="https://www.linkedin.com/in/mohammadbilal7/" target="_blank" rel="noopener noreferrer">
             <img src={LinkedInLogo} alt="LinkedIn" />

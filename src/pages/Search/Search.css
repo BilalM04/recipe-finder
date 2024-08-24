@@ -23,31 +23,26 @@ h1 {
 /* RecipeList Component */
 .recipe-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-  gap: 20px;
+  flex-direction: column;
+  gap: 16px; /* Adjust the gap between rows as needed */
 }
 
 /* RecipeCard Component */
+
 .recipe-card {
   display: flex;
-  text-align: left;
   flex-direction: column;
-  background-color: #ccccccb7;
-  align-items: center; 
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 50px;
-  cursor: pointer;
-  transition: transform 0.2s ease-in-out;
-  width: calc(33.33% - 20px);
-  margin-top: 15px;
-  width: 250px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 0; /* Remove margin to ensure full width */
+  border-radius: 8px;
+  background-color: #fff;
+  width: 90%; /* Ensure the card takes up the full width */
 }
-
+/* 
 .recipe-card:hover {
   transform: scale(1.02);
-}
+} */
 
 .recipe-card h3 {
   margin-top: 0;
