@@ -96,7 +96,7 @@ const Search = () => {
   };
 
   const handleHeaderClick = () => {
-    navigate('/');
+    navigate(`${process.env.REACT_APP_FOR_PATH}/`);
   };
 
   return (
