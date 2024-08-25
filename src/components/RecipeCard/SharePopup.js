@@ -1,5 +1,5 @@
 import React from 'react';
-import './SharePopup.css'; // Ensure this path is correct
+import './SharePopup.css';
 
 const SharePopup = ({ onClose, shareAs }) => {
   const handleShare = (platform) => {
@@ -17,7 +17,6 @@ const SharePopup = ({ onClose, shareAs }) => {
         shareUrl = `https://pinterest.com/pin/create/button/?url=${url}`;
         break;
       case 'twitter':
-        // Update to new X link
         shareUrl = `https://x.com/intent/tweet?url=${url}`;
         break;
       default:
