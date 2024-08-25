@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.3a97f630.css",
-    "main.js": "./static/js/main.7027b805.js",
-    "static/media/fa-solid-900.ttf": "./static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
-    "static/media/fa-brands-400.ttf": "./static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
-    "static/media/fa-solid-900.woff2": "./static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
-    "static/media/fa-brands-400.woff2": "./static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
-    "static/media/fa-regular-400.ttf": "./static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
-    "static/media/fa-regular-400.woff2": "./static/media/fa-regular-400.bc3722686635b5f86132.woff2",
-    "static/media/LinkedInLogo.png": "./static/media/LinkedInLogo.aefe7d78a16ce2c7d49e.png",
-    "static/media/fa-v4compatibility.ttf": "./static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
-    "static/media/fa-v4compatibility.woff2": "./static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
-    "index.html": "./index.html",
-    "main.3a97f630.css.map": "./static/css/main.3a97f630.css.map",
-    "main.7027b805.js.map": "./static/js/main.7027b805.js.map"
+    "main.css": "/recipe-finder/static/css/main.a3485fdc.css",
+    "main.js": "/recipe-finder/static/js/main.7fec4fc1.js",
+    "static/media/fa-solid-900.ttf": "/recipe-finder/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "/recipe-finder/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/recipe-finder/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "/recipe-finder/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/fa-regular-400.ttf": "/recipe-finder/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/recipe-finder/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/LinkedInLogo.png": "/recipe-finder/static/media/LinkedInLogo.aefe7d78a16ce2c7d49e.png",
+    "static/media/fa-v4compatibility.ttf": "/recipe-finder/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/recipe-finder/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/recipe-finder/index.html",
+    "main.a3485fdc.css.map": "/recipe-finder/static/css/main.a3485fdc.css.map",
+    "main.7fec4fc1.js.map": "/recipe-finder/static/js/main.7fec4fc1.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a97f630.css",
-    "static/js/main.7027b805.js"
+    "static/css/main.a3485fdc.css",
+    "static/js/main.7fec4fc1.js"
   ]
 }
