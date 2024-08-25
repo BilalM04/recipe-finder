@@ -4,9 +4,9 @@ import './index.css';
 import Search from './pages/Search/Search';
 import HomePage from './pages/HomePage/HomePage';
 import SavedRecipes from './pages/SavedRecipes/SavedRecipes';
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: process.env.REACT_APP_FOR_PATH + "/",
     element: <HomePage/>,
