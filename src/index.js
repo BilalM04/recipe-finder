@@ -7,7 +7,7 @@ import SavedRecipes from './pages/SavedRecipes/SavedRecipes';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 const App = () => (
-  <Router >
+  <Router basename='/'>
     <Routes>
       <Route path={process.env.REACT_APP_FOR_PATH + "/"} element={<HomePage />} />
       <Route path={process.env.REACT_APP_FOR_PATH + "/search"} element={<Search />} />
