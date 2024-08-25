@@ -122,7 +122,7 @@ const SavedRecipes = () => {
             {sortedRecipes.length > 0 ? (
               <>
                 <div className='select-container'>
-                  <select value={sortOption} onChange={(e) => setSortOption(e.target.value)}>
+                  <select id="sort-select" value={sortOption} onChange={(e) => setSortOption(e.target.value)}>
                     <option value="">Sort by</option>
                     <option value="alphabetical-asc">Alphabetical (A-Z)</option>
                     <option value="alphabetical-desc">Alphabetical (Z-A)</option>

@@ -37,6 +37,7 @@ const SignUpForm = ({ setShowSignUpForm }) => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             onKeyDown={handleKeyDown}
+            autocomplete="email"
           />
         </div>
         <div className="input-group">

@@ -37,6 +37,7 @@ const LoginForm = ({ setShowLoginForm }) => {
             value={email} 
             onChange={(e) => setEmail(e.target.value)} 
             onKeyDown={handleKeyDown}
+            autocomplete="email"
           />
         </div>
         <div className="input-group">
@@ -47,6 +48,7 @@ const LoginForm = ({ setShowLoginForm }) => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             onKeyDown={handleKeyDown}
+            // autocomplete="current-password"
           />
         </div>
         <div className="input-group">
