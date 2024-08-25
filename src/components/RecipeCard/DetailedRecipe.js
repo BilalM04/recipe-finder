@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './DetailedRecipe.css';
 import './RecipeCard.css';
 
-const DetailedRecipe = ({ isOpen, onClose, onSave, recipe, user }) => {
+const DetailedRecipe = ({ isOpen, onClose, onSave, recipe, onDelete, isSaved }) => {
   useEffect(() => {
     if (isOpen) {
       const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
@@ -49,7 +49,7 @@ const DetailedRecipe = ({ isOpen, onClose, onSave, recipe, user }) => {
               <li><b>Meal Type:</b> {mealType.length > 0 ? mealType.join(', ') : 'N/A'}</li>
               <li><b>Dish Type:</b> {dishType.length > 0 ? dishType.join(', ') : 'N/A'}</li>
               <li><b>Calories:</b> {Math.round(calories)} kcal</li>
-              <li><b>Complete Instructions:</b> <a href={url}>{source}</a></li>
+              <li><b>Complete Instructions:</b> <a href={url} target="_blank" rel="noopener noreferrer">{source}</a></li>
             </ul>
           </div>
           <div className='row'>
@@ -64,8 +64,9 @@ const DetailedRecipe = ({ isOpen, onClose, onSave, recipe, user }) => {
           </div>
         </div>
         <div className="row button-row footer">
-          {user && <button className='recipe-button' onClick={() => onSave(link)}>Save Recipe</button>}
+          {!isSaved && <button className='recipe-button' onClick={() => onSave(link)}>Save Recipe</button>}
           <button className='recipe-button'>Share</button>
+          {isSaved && <button className='recipe-button' onClick={() => onDelete(link)}>Delete</button>}
           <button className='recipe-button' onClick={onClose}>Close</button>
         </div>
       </div>

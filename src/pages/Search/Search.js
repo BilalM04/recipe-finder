@@ -10,10 +10,12 @@ import SignUpForm from '../../components/AuthForms/SignUpForm';
 
 const Search = () => {
   const [query, setQuery] = useState('');
-  const [recipes, setRecipes] = useState([]);
+  const [fetchedRecipes, setFetchedRecipes] = useState([]); // State for storing fetched recipes
+  const [sortedRecipes, setSortedRecipes] = useState([]); // State for storing sorted recipes
   const [user, setUser] = useState(null);
   const [showLoginForm, setShowLoginForm] = useState(false);
   const [showSignUpForm, setShowSignUpForm] = useState(false);
+  const [sortOption, setSortOption] = useState(''); // State for sorting option
 
   const fetchRecipes = async () => {
     if (query.trim() !== '') {
@@ -27,11 +29,26 @@ const Search = () => {
             link: hit._links.self.href
           };
         });
-        setRecipes(recipesWithLinks);
+        setFetchedRecipes(recipesWithLinks);
+        sortRecipes(recipesWithLinks, sortOption); // Sort recipes after fetching
       } catch (error) {
         console.error('Error fetching recipes:', error);
       }
     }
+  };
+
+  const sortRecipes = (recipes, option) => {
+    let sorted = [...recipes];
+    if (option === 'alphabetical-asc') {
+      sorted.sort((a, b) => a.label.localeCompare(b.label));
+    } else if (option === 'alphabetical-desc') {
+      sorted.sort((a, b) => b.label.localeCompare(a.label));
+    } else if (option === 'calories-asc') {
+      sorted.sort((a, b) => a.calories - b.calories);
+    } else if (option === 'calories-desc') {
+      sorted.sort((a, b) => b.calories - a.calories);
+    }
+    setSortedRecipes(sorted);
   };
 
   const handleSearch = async (e) => {
@@ -41,11 +58,10 @@ const Search = () => {
 
   const handleSaveRecipe = async (uri) => {
     try {
-      console.log(uri)
-      const response = await axios.post(`${process.env.REACT_APP_RECIPE_API_URL}/users/${user.email}`, { uri });
-      console.log(`Recipe saved!`, response.data);
+      await axios.post(`${process.env.REACT_APP_RECIPE_API_URL}/users/${user.email}`, { uri });
+      console.log('Recipe saved!');
     } catch (error) {
-      console.error('Error saving recipe:', error);
+      console.log("Recipe already saved!")
     }
   };
 
@@ -58,6 +74,11 @@ const Search = () => {
       unsubscribe();
     };
   }, []);
+
+  // Trigger sorting whenever the sorting option changes
+  useEffect(() => {
+    sortRecipes(fetchedRecipes, sortOption);
+  }, [sortOption, fetchedRecipes]);
 
   const handleLogout = async () => {
     try {
@@ -74,6 +95,10 @@ const Search = () => {
     navigate(`${path}?user=${user ? user.email : ''}`);
   };
 
+  const handleHeaderClick = () => {
+    navigate('/');
+  };
+
   return (
     <div className="App">
       <div className="auth-buttons">
@@ -87,7 +112,6 @@ const Search = () => {
             {showLoginForm && (
               <LoginForm setShowLoginForm={setShowLoginForm} />
             )}
-
             <button className='auth-button' onClick={() => setShowSignUpForm(true)}>Sign Up</button>
             {showSignUpForm && (
               <SignUpForm setShowSignUpForm={setShowSignUpForm} />
@@ -97,22 +121,40 @@ const Search = () => {
       </div>
       <div className="content-main">
         <header className="header">
-          <h1>👨‍🍳 Recipe Finder 🍴</h1>
+            <h1 onClick={handleHeaderClick} style={{ cursor: 'pointer' }}>
+              👨‍🍳 Recipe Finder 🍴
+            </h1>
         </header>
         <div>
           <SearchBar query={query} setQuery={setQuery} handleSearch={handleSearch} />
           {!user && (<p className="description">Browse without an account! Please login or sign up to save recipes.</p>)}
           {user && (<button onClick={routeChange}>View Saved Recipes</button>)}
-          <div className="recipe-list">
-            {recipes.map((recipe) => (
-              <RecipeCard
-                key={recipe.uri}
-                recipe={recipe}
-                onSaveRecipe={handleSaveRecipe}
-                user={user}
-              />
-            ))}
+        </div>
+
+        {fetchedRecipes.length > 0 ? (
+          <div className='select-container'>
+            <select value={sortOption} onChange={(e) => setSortOption(e.target.value)}>
+              <option value="">Sort by</option>
+              <option value="alphabetical-asc">Alphabetical (A-Z)</option>
+              <option value="alphabetical-desc">Alphabetical (Z-A)</option>
+              <option value="calories-asc">Calories (Low to High)</option>
+              <option value="calories-desc">Calories (High to Low)</option>
+            </select>
           </div>
+        ) : (
+          query.trim() !== '' && <p>No Results</p> // Only show "No Results" if a search was made
+        )}
+
+        <div className="recipe-list">
+          {sortedRecipes.map((recipe) => (
+            <RecipeCard
+              key={recipe.uri}
+              recipe={recipe}
+              onSaveRecipe={handleSaveRecipe}
+              user={user}
+              isSaved={false}
+            />
+          ))}
         </div>
       </div>
     </div>

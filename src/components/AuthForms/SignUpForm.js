@@ -19,6 +19,12 @@ const SignUpForm = ({ setShowSignUpForm }) => {
       });
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleSignUp();
+    }
+  };
+
   return (
     <div className="overlay">
       <div className="modal">
@@ -27,16 +33,20 @@ const SignUpForm = ({ setShowSignUpForm }) => {
           <input
             type="email"
             placeholder="Email"
+            name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
         </div>
         <div className="input-group">
           <input
             type="password"
             placeholder="Password"
+            name="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            onKeyDown={handleKeyDown}
           />
         </div>
         <div className="input-group">

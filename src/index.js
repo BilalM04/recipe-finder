@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <HomePage/>,
   },
   {
-    path: process.env.REACT_APP_FOR_PATH + "/browse",
+    path: process.env.REACT_APP_FOR_PATH + "/search",
     element: <Search/>,
   },{
     path: process.env.REACT_APP_FOR_PATH + "/saved",

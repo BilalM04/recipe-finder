@@ -9,7 +9,7 @@ const SearchBar = ({ query, setQuery, handleSearch }) => {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Enter ingredients..."
+          placeholder="Search..."
           className="search-input"
         />
         <button type="submit" className="search-button">Search</button>

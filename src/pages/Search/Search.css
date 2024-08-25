@@ -101,3 +101,11 @@ h1 {
   font-size: 1.2rem;
   color: #666;
 }
+
+.select-container {
+  margin-top: 10px;
+}
+
+.select-container select {
+  border-radius: 5px;
+}
