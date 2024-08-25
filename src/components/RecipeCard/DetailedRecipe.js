@@ -38,12 +38,10 @@ const DetailedRecipe = ({ isOpen, onClose, onSave, recipe, onDelete, isSaved }) 
   } = recipe;
 
   const handleShareClick = () => {
-    console.log('Share button clicked');
     setShowSharePopup(true);
   };
 
   const handlePopupClose = () => {
-    console.log('Popup close button clicked');
     setShowSharePopup(false);
   };
 
