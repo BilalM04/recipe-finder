@@ -39,10 +39,6 @@ h1 {
   background-color: #fff;
   width: 90%; /* Ensure the card takes up the full width */
 }
-/* 
-.recipe-card:hover {
-  transform: scale(1.02);
-} */
 
 .recipe-card h3 {
   margin-top: 0;
@@ -86,7 +82,7 @@ h1 {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content */
+  align-items: center; 
 }
 
 .header {
@@ -94,7 +90,7 @@ h1 {
 }
 
 .header h1 {
-  font-size: 2rem; /* Adjust font size if necessary */
+  font-size: 2rem; 
 }
 
 .description {
