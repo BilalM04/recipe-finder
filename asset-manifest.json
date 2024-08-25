@@ -1,14 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.56a282e0.css",
-    "main.js": "./static/js/main.98de6eab.js",
+    "main.css": "./static/css/main.d4b0622c.css",
+    "main.js": "./static/js/main.a2a070d2.js",
+    "static/media/fa-solid-900.ttf": "./static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "./static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "./static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "./static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/fa-regular-400.ttf": "./static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "./static/media/fa-regular-400.bc3722686635b5f86132.woff2",
     "static/media/LinkedInLogo.png": "./static/media/LinkedInLogo.aefe7d78a16ce2c7d49e.png",
+    "static/media/fa-v4compatibility.ttf": "./static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "./static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "./index.html",
-    "main.56a282e0.css.map": "./static/css/main.56a282e0.css.map",
-    "main.98de6eab.js.map": "./static/js/main.98de6eab.js.map"
+    "main.d4b0622c.css.map": "./static/css/main.d4b0622c.css.map",
+    "main.a2a070d2.js.map": "./static/js/main.a2a070d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.56a282e0.css",
-    "static/js/main.98de6eab.js"
+    "static/css/main.d4b0622c.css",
+    "static/js/main.a2a070d2.js"
   ]
 }
