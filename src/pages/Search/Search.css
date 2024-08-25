@@ -27,30 +27,6 @@ h1 {
   gap: 16px; /* Adjust the gap between rows as needed */
 }
 
-/* RecipeCard Component */
-
-.recipe-card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ccc;
-  padding: 16px;
-  margin: 0; /* Remove margin to ensure full width */
-  border-radius: 8px;
-  background-color: #fff;
-  width: 90%; /* Ensure the card takes up the full width */
-}
-
-.recipe-card h3 {
-  margin-top: 0;
-}
-
-.recipe-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
 .App {
   display: flex;
   flex-direction: column;
