@@ -3,7 +3,7 @@ import './DetailedRecipe.css';
 import './RecipeCard.css';
 import SharePopup from './SharePopup'; // Import the SharePopup component
 
-const DetailedRecipe = ({ isOpen, onClose, onSave, recipe, onDelete, isSaved }) => {
+const DetailedRecipe = ({ isOpen, onClose, onSave, recipe, user, onDelete, isSaved }) => {
   const [showSharePopup, setShowSharePopup] = useState(false);
 
   useEffect(() => {
@@ -78,7 +78,7 @@ const DetailedRecipe = ({ isOpen, onClose, onSave, recipe, onDelete, isSaved }) 
             </div>
           </div>
           <div className="row button-row footer">
-            {!isSaved && <button className='recipe-button' onClick={() => onSave(link)}>Save Recipe</button>}
+            {!isSaved && user && <button className='recipe-button' onClick={() => onSave(link)}>Save Recipe</button>}
             <button className='recipe-button' onClick={handleShareClick}>Share</button>
             {isSaved && <button className='recipe-button' onClick={() => onDelete(link)}>Delete</button>}
             <button className='recipe-button' onClick={onClose}>Close</button>
