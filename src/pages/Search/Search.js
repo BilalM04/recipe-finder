@@ -91,12 +91,12 @@ const Search = () => {
 
   let navigate = useNavigate();
   const routeChange = () => {
-    let path = `${process.env.REACT_APP_FOR_PATH}/saved`;
+    let path = `/saved`;
     navigate(`${path}?user=${user ? user.email : ''}`);
   };
 
   const handleHeaderClick = () => {
-    navigate(`${process.env.REACT_APP_FOR_PATH}/`);
+    navigate(`/`);
   };
 
   return (

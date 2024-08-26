@@ -9,9 +9,9 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 const App = () => (
   <Router basename='/'>
     <Routes>
-      <Route path={process.env.REACT_APP_FOR_PATH + "/"} element={<HomePage />} />
-      <Route path={process.env.REACT_APP_FOR_PATH + "/search"} element={<Search />} />
-      <Route path={process.env.REACT_APP_FOR_PATH + "/saved"} element={<SavedRecipes />} />
+      <Route path={"/"} element={<HomePage />} />
+      <Route path={"/search"} element={<Search />} />
+      <Route path={"/saved"} element={<SavedRecipes />} />
     </Routes>
   </Router>
 );

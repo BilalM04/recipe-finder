@@ -34,7 +34,6 @@ jobs:
           REACT_APP_RECIPE_API_URL: ${{ secrets.REACT_APP_RECIPE_API_URL }}
           REACT_APP_EDAMAM_APP_ID: ${{ secrets.REACT_APP_EDAMAM_APP_ID }}
           REACT_APP_EDAMAM_APP_KEY: ${{ secrets.REACT_APP_EDAMAM_APP_KEY }}
-          REACT_APP_FOR_PATH: 
         
       - name: Create .nojekyll
         run: echo > build/.nojekyll

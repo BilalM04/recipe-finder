@@ -95,7 +95,7 @@ const SavedRecipes = () => {
 
   let navigate = useNavigate(); 
   const routeChange = () =>{ 
-    let path = `${process.env.REACT_APP_FOR_PATH}/search`; 
+    let path = `/search`; 
     navigate(path);
   }
 
