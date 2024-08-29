@@ -10,12 +10,13 @@ import SignUpForm from '../../components/AuthForms/SignUpForm';
 
 const Search = () => {
   const [query, setQuery] = useState('');
-  const [fetchedRecipes, setFetchedRecipes] = useState([]); // State for storing fetched recipes
-  const [sortedRecipes, setSortedRecipes] = useState([]); // State for storing sorted recipes
+  const [fetchedRecipes, setFetchedRecipes] = useState([]); 
+  const [sortedRecipes, setSortedRecipes] = useState([]); 
   const [user, setUser] = useState(null);
   const [showLoginForm, setShowLoginForm] = useState(false);
   const [showSignUpForm, setShowSignUpForm] = useState(false);
-  const [sortOption, setSortOption] = useState(''); // State for sorting option
+  const [sortOption, setSortOption] = useState('');
+  const [hasSearched, setHasSearched] = useState(false); 
 
   const fetchRecipes = async () => {
     if (query.trim() !== '') {
@@ -30,7 +31,7 @@ const Search = () => {
           };
         });
         setFetchedRecipes(recipesWithLinks);
-        sortRecipes(recipesWithLinks, sortOption); // Sort recipes after fetching
+        sortRecipes(recipesWithLinks, sortOption);
       } catch (error) {
         console.error('Error fetching recipes:', error);
       }
@@ -53,6 +54,7 @@ const Search = () => {
 
   const handleSearch = async (e) => {
     e.preventDefault();
+    setHasSearched(true);
     await fetchRecipes();
   };
 
@@ -75,7 +77,6 @@ const Search = () => {
     };
   }, []);
 
-  // Trigger sorting whenever the sorting option changes
   useEffect(() => {
     sortRecipes(fetchedRecipes, sortOption);
   }, [sortOption, fetchedRecipes]);
@@ -142,7 +143,7 @@ const Search = () => {
             </select>
           </div>
         ) : (
-          query.trim() !== '' && <p>No Results</p> // Only show "No Results" if a search was made
+          hasSearched && <p>No Results</p>
         )}
 
         <div className="recipe-list">
