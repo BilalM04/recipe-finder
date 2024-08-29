@@ -19,25 +19,6 @@ Welcome to the Recipe Finder web application, a dynamic and intuitive solution f
 
 - **Database Integration:** Utilize MongoDB to securely store and retrieve recipes saved by authorized users.
 
-## User Authentication and Recipe Management
-
-The Recipe Finder web application provides a robust set of features for user authentication and recipe management, enhancing your overall experience.
-
-### User Authentication
-
-- **Login:** Users can securely log in to their accounts, ensuring a personalized experience tailored to their preferences.
-
-- **Sign Up:** New users can easily create accounts, gaining access to personalized features and recipe-saving capabilities.
-
-### Recipe Management
-
-- **Save Recipes:** Authenticated users have the ability to save their favorite recipes for easy access later. This feature enables a curated collection of personalized recipes.
-
-- **Delete Recipes:** Users can manage their saved recipes by deleting items from their collection. This flexibility ensures a tailored and clutter-free recipe library.
-
-These features, combined with the intuitive interface and recipe discovery capabilities, make the Recipe Finder a comprehensive solution for both discovering and managing your favorite recipes.
-
-
 ## Technologies Used
 
 - **Frontend:** React.js, CSS
@@ -62,13 +43,25 @@ These features, combined with the intuitive interface and recipe discovery capab
    ```bash
     npm install
 
-4. **Configure Firebase:** Set up a Firebase project and obtain the configuration details. Update the Firebase configuration in the frontend (src/firebase.js).
+4. **Configure Environment Variables:** Create a `.env` file and fill in the following variables with your own credentials.
+   ```env
+   REACT_APP_FIREBASE_API_KEY=
+   REACT_APP_FIREBASE_AUTH_DOMAIN=
+   REACT_APP_FIREBASE_PROJECT_ID=
+   REACT_APP_FIREBASE_STORAGE_BUCKET=
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=
+   REACT_APP_FIREBASE_APP_ID=
+   REACT_APP_FIREBASE_MEASUREMENT_ID=
+   REACT_APP_RECIPE_API_URL=
+   REACT_APP_EDAMAM_APP_ID=
+   REACT_APP_EDAMAM_APP_KEY=
+   ```
 
-5. **Run the Application:**
+6. **Run the Application:**
    ```bash
     npm start
 
-7. The application will be accessible at http://localhost:3000.
+7. The application will be accessible at <http://localhost:3000>.
 
 ## Demo
 
