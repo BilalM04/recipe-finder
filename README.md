@@ -12,9 +12,9 @@ Welcome to the Recipe Finder web application, a dynamic and intuitive solution f
 
 ## Features
 
-- **Recipe Discovery:** Explore a diverse range of recipes based on user-inputted ingredients, thanks to the integration of the Edamam API.
+- **Recipe Discovery:** Explore a diverse range of recipes based on user-inputted ingredients, thanks to the integration of the [Edamam](https://www.edamam.com/) API.
 
-- **User Authentication:** Save and manage your favorite recipes securely. Firebase authentication ensures a seamless and protected user experience.
+- **User Authentication:** Save and manage your favorite recipes securely. [Firebase](https://firebase.google.com/) authentication ensures a seamless and protected user experience.
 
 - **Database Integration:** Utilize MongoDB to securely store and retrieve recipes saved by authorized users.
 
@@ -61,6 +61,10 @@ Welcome to the Recipe Finder web application, a dynamic and intuitive solution f
     npm start
 
 7. The application will be accessible at <http://localhost:3000>.
+
+## Backend
+
+The backend for the Recipe Finder web application is built with Node.js and Express.js, providing a robust API for managing user data and recipes. This API interacts with a MongoDB database to handle user authentication and recipe storage. You can find the source code for the backend [here](https://github.com/BilalM04/recipe-finder-backend).
 
 ## Demo
 
