@@ -6,7 +6,8 @@ Welcome to the Recipe Finder web application, a dynamic and intuitive solution f
 
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/54f115be-c303-4e88-87a5-ed7f2727b77f" width="45%"></img> <img src="https://github.com/user-attachments/assets/3bd1bb7f-d730-40a4-a0b0-6c7486bbe5ee" width="45%"></img> 
+![](https://github.com/user-attachments/assets/54f115be-c303-4e88-87a5-ed7f2727b77f)
+![](https://github.com/user-attachments/assets/3bd1bb7f-d730-40a4-a0b0-6c7486bbe5ee)
 
 </div>
 
